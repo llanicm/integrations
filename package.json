@@ -1,5 +1,5 @@
 {
-  "name": "elba-security",
+  "name": "integrations",
   "private": true,
   "type": "module",
   "scripts": {

@@ -1,12 +1,18 @@
 {
-  "extends": "@elba-security/tsconfig/nextjs.json",
+  "extends": "@repo/typescript-config/nextjs.json",
   "compilerOptions": {
-    "plugins": [{ "name": "next" }],
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "allowJs": true
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "next.config.mjs",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
